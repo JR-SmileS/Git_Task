@@ -1,11 +1,11 @@
 import math
 
-a = int(input("а= " ))
-b = int(input("b= " ))
-c = int(input("с= " ))
+a = int(input("а" ))
+b = int(input("b" ))
+c = int(input("с" ))
 
 if int((b*b-4*a*c) < 0):
-    print('Корней нет')
+    print('Корни уравнения отсутствуют')
 else:
     d = math.sqrt(b*b-4*a*c)
     if d > 0:
@@ -14,4 +14,4 @@ else:
         print(x1, x2, d)
     else:
         x1 = (-1 * b)/ (a * 2)
-        print('1 корень',x1)
+        print('один корень',x1)
